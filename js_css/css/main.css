@@ -1,0 +1,103 @@
+/* 기본 레이아웃 설정 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+h3,
+h4 {
+  color: #333;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* 폼 스타일링 */
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #357ab7;
+}
+
+button[type="submit"]:active {
+  background-color: #2f6b9f;
+}
+
+/* 구분선 스타일 */
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+}
+
+/* 회원검색 제목 추가 스타일 */
+input[type="text"][placeholder="회원 검색"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"]:first-of-type {
+  width: 100%;
+  padding: 12px;
+  background-color: #58c5e1;
+  border-radius: 5px;
+}
+
+button[type="submit"]:first-of-type:hover {
+  background-color: #4ca6c7;
+}
+
+button[type="submit"]:first-of-type:active {
+  background-color: #3a8a9e;
+}
