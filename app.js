@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.get("/", (req, res) => {
-  res.render("main");
+  res.render("join");
 });
 
 // 회원정보 검색결과창으로 랜더
@@ -37,8 +37,9 @@ app.get("/userinfo", (req, res) => {
   res.json(userinfo); // 클라이언트에게 JSON 형식으로 응답
 });
 
-app.get("/test2", (req, res) => {
-  res.render("test2");
+app.post("/login", (req, res) => {
+  res.render("main2");
+  res.render("main2", { title: "회원 list", userinfo: req.body });
 });
 
 app.listen(port, () => {

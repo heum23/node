@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/join.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-box">
+      <form action="/login" method="post">
+        <div class="content">
+          <div>email</div>
+          <input
+            type="email"
+            name="email"
+            placeholder="email을 입력해주세요."
+          />
+        </div>
+        <div class="content">
+          <div>이름</div>
+          <input type="text" name="name" placeholder="이름을 입력해주세요." />
+        </div>
+        <div class="content">
+          <div>비밀번호</div>
+          <input
+            type="password"
+            name="pw"
+            placeholder="비밀번호를 입력해주세요."
+          />
+        </div>
+        <div class="content">
+          <div>비밀번호 확인</div>
+          <input type="password" name="pw" placeholder="비밀번호 확인." />
+        </div>
+        <div class="content">
+          <div>성별</div>
+          <label for="남자">남자</label><input type="radio" name="gender" />
+          <label for="남자">여자</label><input type="radio" name="gender" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
