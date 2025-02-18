@@ -1,4 +1,5 @@
 const express = require("express");
+const multer = require("multer");
 const app = express();
 const port = 3000;
 //path 선언
@@ -14,7 +15,7 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 app.get("/", (req, res) => {
-  res.render("join");
+  res.render("main");
 });
 
 // 회원정보 검색결과창으로 랜더
